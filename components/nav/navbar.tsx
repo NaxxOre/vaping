@@ -42,19 +42,19 @@ function Navbar(){
     
 
     const handleHover = (tab: string) => {
-        if (windowWidth > 1429) {
+        if (windowWidth > 1024) {
             setHoveredTab(tab);
         }
     };
 
     const handleLeave = () => {
-        if (windowWidth > 1429) {
+        if (windowWidth > 1024) {
             setHoveredTab("");
         }
     };
 
     const handleToggleAccordion = (tab: string) => {
-        if (windowWidth <= 1429) {
+        if (windowWidth <= 1024) {
             setActiveTab(activeTab === tab ? "" : tab);
         }
     };
@@ -79,16 +79,16 @@ function Navbar(){
             <nav
              ref={navRef} className="flex">
                 <div className="Menu" onMouseEnter={()=>handleHover("menu1")} onMouseLeave={handleLeave} onClick={()=>handleToggleAccordion("menu1")}>
-                    <a className={windowWidth>1429?"hoverActive menu1":"menu1"} style={{opacity: hoveredTab==='menu1'?0.7:1}}>
+                    <a className={windowWidth>1024?"hoverActive menu1":"menu1"} style={{opacity: hoveredTab==='menu1'?0.7:1}}>
                         <span className="text-xl">About</span>
                         <svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg" className="arrow w-[14px] w-[14px]">
-                            <path d={activeTab==="menu1"?"M17 8L8.57895 2L1 8":"M1 1.64285L9.42105 7.64285L17 1.64285"} stroke={windowWidth <= 1429 ? "white" : "black"} strokeWidth="2" strokeLinecap="round"/>
+                            <path d={activeTab==="menu1"?"M17 8L8.57895 2L1 8":"M1 1.64285L9.42105 7.64285L17 1.64285"} stroke={windowWidth <= 1024 ? "white" : "black"} strokeWidth="2" strokeLinecap="round"/>
                         </svg>
-                        {(windowWidth <= 1429) && (
+                        {(windowWidth <= 1024) && (
                             <div className={activeTab==="menu1"?"stick active":"stick"}></div>
                         )}
                     </a>
-                    {(hoveredTab === "menu1" && windowWidth > 1429) && (
+                    {(hoveredTab === "menu1" && windowWidth > 1024) && (
                         <Item1/>
                     )}
                     {(windowWidth <= 1429 && activeTab === "menu1") && (
@@ -136,13 +136,13 @@ function Navbar(){
                 </div>
 
                 <div className="Menu" onMouseEnter={()=>handleHover("menu4")} onMouseLeave={handleLeave} onClick={()=>handleToggleAccordion("menu4")}>
-                <Link href='/about/news' className={windowWidth>1429?"hoverActive menu4":"menu4"} style={{opacity:hoveredTab==='menu4'?0.7:1}}>
+                <Link href='/about/news' className={windowWidth>1024?"hoverActive menu4":"menu4"} style={{opacity:hoveredTab==='menu4'?0.7:1}}>
                         <span className="text-xl">News</span>
                         <svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg" className="arrow w-[14px]">
-                            <path d={activeTab==="menu4"?"M17 8L8.57895 2L1 8":"M1 1.64285L9.42105 7.64285L17 1.64285"} stroke={windowWidth <= 1429 ? "white" : "black"} strokeWidth="2" strokeLinecap="round"/>
+                            <path d={activeTab==="menu4"?"M17 8L8.57895 2L1 8":"M1 1.64285L9.42105 7.64285L17 1.64285"} stroke={windowWidth <= 1024 ? "white" : "black"} strokeWidth="2" strokeLinecap="round"/>
                         </svg>
 
-                        {(windowWidth <= 1429) && (
+                        {(windowWidth <= 1024) && (
                             <div className={activeTab==="menu4"?"stick active":"stick"}></div>
                         )}
                     </Link>
@@ -150,13 +150,13 @@ function Navbar(){
                 </div>  
 
                 <div className="Menu" onMouseEnter={()=>handleHover("menu5")} onMouseLeave={handleLeave} onClick={()=>handleToggleAccordion("menu5")}>
-                    <Link href="/research" className={windowWidth>1429?"hoverActive menu5":"menu5"} style={{opacity:hoveredTab==='menu5'?0.7:1}}>
+                    <Link href="/research" className={windowWidth>1024?"hoverActive menu5":"menu5"} style={{opacity:hoveredTab==='menu5'?0.7:1}}>
                         <span className="text-xl">Research</span>
                         <svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg" className="arrow w-[14px]">
-                            <path d={activeTab==="menu5"?"M17 8L8.57895 2L1 8":"M1 1.64285L9.42105 7.64285L17 1.64285"} stroke={windowWidth <= 1429 ? "white" : "black"} strokeWidth="2" strokeLinecap="round"/>
+                            <path d={activeTab==="menu5"?"M17 8L8.57895 2L1 8":"M1 1.64285L9.42105 7.64285L17 1.64285"} stroke={windowWidth <= 1024 ? "white" : "black"} strokeWidth="2" strokeLinecap="round"/>
                         </svg>
 
-                        {(windowWidth <= 1429) && (
+                        {(windowWidth <= 1024) && (
                             <div className={activeTab==="menu5"?"stick active":"stick"}></div>
                         )}
                     </Link>
