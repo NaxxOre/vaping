@@ -8,6 +8,13 @@ interface NavLinkItem {
     link: string
 }
 
+interface HistoryType {
+    id: number
+    logo: string
+    title: string
+    p: string
+}
 
 
-export type {NavLink}
+
+export type {NavLink, HistoryType}
