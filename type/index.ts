@@ -8,6 +8,10 @@ interface NavLinkItem {
     link: string
 }
 
+interface ImageHeaderText {
+    name : string
+    name1? : string
+  }
 
 
-export type {NavLink}
+export type {NavLink, ImageHeaderText}
