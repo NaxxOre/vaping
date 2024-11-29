@@ -9,6 +9,7 @@ interface NavLinkItem {
 }
 
 interface ImageHeaderText {
+    url : string
     name : string
     name1? : string
   }

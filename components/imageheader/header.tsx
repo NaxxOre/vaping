@@ -1,11 +1,11 @@
 import { ImageHeaderText } from '@/type';
 
-function ImageHeader({ name, name1 }: ImageHeaderText) {
+function ImageHeader({ url, name, name1 }: ImageHeaderText) {
   return (
     <div
       className="relative h-[319px] md:h-[455px] bg-no-repeat bg-cover bg-center py-[27.5px] lg:py-14 lg:px-97"
       style={{
-        backgroundImage: `url('/images/mainPhoto.png')`, // Replace with your image URL
+        backgroundImage: `url(${url})`, // Replace with your image URL
         opacity: '90%',
       }}
     >
