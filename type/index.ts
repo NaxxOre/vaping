@@ -8,6 +8,13 @@ interface NavLinkItem {
     link: string
 }
 
+interface HistoryType {
+    id: number
+    logo: string
+    title: string
+    p: string
+}
+
 interface ImageHeaderText {
     url : string
     name : string
@@ -15,4 +22,4 @@ interface ImageHeaderText {
   }
 
 
-export type {NavLink, ImageHeaderText}
+export type {NavLink, ImageHeaderText, HistoryType}
