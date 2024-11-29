@@ -19,9 +19,9 @@
 @font-face {
   font-family: 'OldSchool';
   src: url('/fonts/OldschoolGrotesk-NormalRegular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+  font-display: swap;
 }
+
 
 body {
   color: var(--foreground);
@@ -97,11 +97,11 @@ header .nav-btn{
 }
 
 .item2{
-  width: 550%;
+  width: 580%;
 }
 
 .item3{
-  width: 120%;
+  width: 150%;
   left: 0;
 }
   
