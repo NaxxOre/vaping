@@ -15,6 +15,11 @@ interface HistoryType {
     p: string
 }
 
+interface ImageHeaderText {
+    url : string
+    name : string
+    name1? : string
+  }
 
 
-export type {NavLink, HistoryType}
+export type {NavLink, ImageHeaderText, HistoryType}
