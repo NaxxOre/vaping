@@ -27,6 +27,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: 'OldSchool', Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 nav a {

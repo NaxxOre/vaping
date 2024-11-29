@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { HistoryType } from "@/type";
+import ImageHeader from "@/components/imageheader/header";
 
 function History() {
   const itemsData: HistoryType[] = [
@@ -25,8 +26,8 @@ function History() {
 
   return (
     <>
-      <div>
-        {/* History Section */}
+      <div className="overflow-x-hidden w-full ">
+        <ImageHeader url="/images/bg.jpg" name="History" />      
         <div className="flex flex-col md:grid md:grid-cols-2 p-[4%]">
           <div className="w-full flex justify-center">
             {/* Replace img with Image */}
@@ -38,9 +39,9 @@ function History() {
               height={350}
             />
           </div>
-          <span className="ml-20 mt-12">
-            <h1 className="text-2xl text-center">History of UIT</h1>
-            <p className="p-5 text-justify">
+          <div className="lg:ml-20 mt-12">
+            <h1 className="lg:text-3xl text-2xl font-semibold text-center">History of UIT</h1>
+            <p className="p-5 text-justify lg:text-xl text-lg tracking-normal">
               The University Computer Center (UCC) was established in 1971 but
               it changed into the Institute of Computer Science and Technology
               (ICST) in 1988. On 1st July, 1998, it became the University of
@@ -51,7 +52,7 @@ function History() {
               competent computer professionals and specialists who will become
               invaluable human resources in ICT sector.
             </p>
-          </span>
+          </div>
         </div>
 
         {/* UIT Logo Section */}
@@ -82,7 +83,7 @@ function History() {
         </div>
 
         {/* Items Section */}
-        <ul className="px-10 flex flex-row xl:grid xl:grid-cols-3 xl:gap-x-[20px] gap-x-[15px] max-1052:justify-center justify-between w-full items-center flex-wrap xl:gap-y-[20px] gap-y-[30px] mt-10 mb-12">
+        <ul className="px-10 flex flex-row xl:grid xl:grid-cols-3 xl:gap-x-[20px] gap-x-[15px] max-1052:justify-center justify-between w-full items-center flex-wrap xl:gap-y-[20px] gap-y-[30px] mt-10 mb-12 ml-8">
           {itemsData.map((item) => (
             <li key={item.id}>
               <div className="flex flex-col gap-[20px] justify-center items-center sm:justify-start sm:items-start">
@@ -96,10 +97,10 @@ function History() {
                       height={50}
                     />
                   </div>
-                  <div className="text-lg h-[40px] mt-6 mb-10">
+                  <div className="text-xl h-[40px] mt-6 mb-10">
                     {item.title}
                   </div>
-                  <div className="mt-3 text-gray-400">{item.p}</div>
+                  <div className="mt-3 text-gray-400 lg:text-lg text-justify">{item.p}</div>
                 </div>
               </div>
             </li>
