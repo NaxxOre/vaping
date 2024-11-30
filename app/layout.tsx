@@ -25,7 +25,7 @@ export default function RootLayout({
         
         <Navbar />
           <main className="mb-[20px]">
-          {children}
+            {children}
           </main>
         <Footer />
       </body>
