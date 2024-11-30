@@ -1,6 +1,12 @@
 import Image from "next/image";
 import { HistoryType } from "@/type";
 import ImageHeader from "@/components/imageheader/header";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "History",
+  description: "History of University of Information Technology, Yangon, Myanmar"
+}
 
 function History() {
   const itemsData: HistoryType[] = [
