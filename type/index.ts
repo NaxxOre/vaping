@@ -15,11 +15,21 @@ interface HistoryType {
     p: string
 }
 
+interface LabItem{
+    id:number
+    name:string
+    img:string
+    labType:string
+
+}
+
+
 interface ImageHeaderText {
     url : string
     name : string
     name1? : string
   }
+
 
 interface NotificationItems {
     id: number;
@@ -33,4 +43,4 @@ interface TableProps {
     center?: string
 }
 
-export type {NavLink, ImageHeaderText, HistoryType, NotificationItems, TableProps}
+export type {NavLink, ImageHeaderText, HistoryType, NotificationItems, TableProps ,LabItem}

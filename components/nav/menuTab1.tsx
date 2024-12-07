@@ -40,7 +40,7 @@ function Item1() {
       items: [
         {
           text: "Library",
-          link: "/academic/library",
+          link: "/about/library",
         },
         {
           text: "LMS",
