@@ -8,6 +8,11 @@ interface NavLinkItem {
     link: string
 }
 
+interface Club {
+    img: string;
+    name: string;
+}
+
 interface HistoryType {
     id: number
     logo: string
@@ -43,4 +48,9 @@ interface TableProps {
     center?: string
 }
 
-export type {NavLink, ImageHeaderText, HistoryType, NotificationItems, TableProps ,LabItem}
+interface Academy {
+    img: string;
+    name: string;
+}
+
+export type {NavLink, ImageHeaderText, HistoryType, NotificationItems, TableProps ,LabItem,Club , Academy}

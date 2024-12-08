@@ -7,8 +7,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
-const items = [
+import { LabItem } from "@/type";
+const items: LabItem[] = [
   { id: 1, name: "Hardware Lab", img: "/images/labs/lab1.jpg", labType: "/labs/hardwareLab" },
   { id: 2, name: "CISCO Network Lab", img: "/images/labs/lab2.jpg", labType: "/labs/ciscoNetworkLab" },
   { id: 3, name: "K-Lab", img: "/images/labs/lab3.jpeg", labType: "/labs/kLab" },
