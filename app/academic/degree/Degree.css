@@ -1,0 +1,322 @@
+body {
+  background-color: #ffffff;
+  font-family: DegularRegular;
+  overflow-x: hidden;
+}
+
+
+
+.image {
+  
+  width: 100px;
+  height: 100px;
+  gap: 0px;
+  opacity: 1;
+  background: url("/images/deg.png");
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+
+}
+
+.main {
+  height: auto; 
+}
+
+
+.mainUnactive {
+  
+  height: 85vh;
+  
+  overflow: hidden;
+  
+}
+
+
+
+
+.image-container,.image {
+  height: 50vw;
+  width: 85vw;
+}
+.image-container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0%;
+}
+
+.image-section {
+  position: relative;
+  background-color: #ffffff;
+  position: relative;
+  background-color: #ffffff;
+  z-index: 35;
+}
+
+
+.degree-container {
+  display: flex;
+
+  
+}
+
+.compo-2 {
+  width: 50%;
+  height: auto;
+}
+
+.compo-1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+}
+
+
+
+
+
+
+
+
+.triviaMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hero h1 {
+  letter-spacing: 0.01em;
+  line-height: 125%;
+}
+
+.animator {
+  position: relative;
+}
+
+.animator:hover {
+  cursor: pointer;
+
+}
+
+.fade {
+  height: auto;
+  display: block;
+}
+
+.coverr,.compo-1 h1 {
+  position: relative;
+  display: inline-block;
+
+}
+
+.text-section {
+  position: relative;
+  z-index: 30;
+  background-color:#ffffff;
+}
+
+
+.coverr .line {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 70%;
+  background-color: #ffffff;
+}
+
+.hide {
+  display: none;
+}
+
+.hideMe {
+  display: none;
+  position: relative;
+  z-index: 30;
+}
+
+.customHide {
+  display: none;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+
+/* Styles */
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+
+/* Styles */
+
+}
+
+
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 640px) {
+
+/* Styles */
+.hide {
+  display: block;
+}
+
+
+
+}
+
+@media only screen and (max-width : 1024px) {
+
+  /* Styles */
+  .hideMe {
+    display: block;
+    position: relative;
+    z-index: 20;
+  }
+
+  .degree-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: -1;
+  
+    
+  }
+
+  .coverr .line {
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    top: 65%;
+    background-color: #f0f8ff80;
+  }
+
+
+
+
+  
+
+.compo-2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .compo-2 {
+    position: relative;
+    z-index: -1;
+  }
+
+  .compo-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+ 
+
+  .compo-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+/* background-color: #1c1d20; */
+  }
+  
+  
+  
+  }
+
+  @media only screen and (min-width : 1024px) {
+
+    /* Styles */
+    .customHide {
+      display: block;
+      position: relative;
+      z-index: 30;
+
+    }
+    
+    .image-section {
+      padding: 62px 0px 62px 0px;
+      position: relative;
+      background-color: #ffffff;
+      z-index: 35;
+      
+    }
+    
+    }
+
+    @media only screen and (max-width : 640px) {
+
+      .image-section {
+      
+        position: relative;
+        background-color: #ffffff;
+        
+      }
+
+      .compo-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 20;
+      }
+    }
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+
+/* Styles */
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+
+/* Styles */
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+/* Styles */
+
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+
+/* Styles */
+
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+
+/* Styles */
+
+}
+
+
+
+
+
+
+
+
