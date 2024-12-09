@@ -30,8 +30,8 @@ function Item1() {
           link: "/about/faculties",
         },
         {
-          text: "FAQS",
-          link: "/about/faqs",
+          text: "FAQ",
+          link: "/about/faq",
         },
       ],
     },
