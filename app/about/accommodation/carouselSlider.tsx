@@ -3,6 +3,7 @@
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from 'next/image';
 
 
 type Images = {
@@ -13,7 +14,7 @@ type Images = {
     text3: string;
 }
 
-const images = [
+const images: Images[] = [
   {
     id:1,
     image: '/images/satkhan.jpg',
@@ -60,7 +61,7 @@ const CarouselSlider = () => {
     <Slider {...settings} >
       {images.map((image)=>(
         <div key={image.id} className='relative' >
-          <img src={image.image} alt="Slide 1" className='w-full md:h-[690px] h-[300px] '/>
+          <Image src={image.image} width={1000} height={1000} alt="Slide 1" className='w-full md:h-[690px] h-[300px] '/>
           <div className='absolute w-[95%] md:h-[690px] h-[300px] flex flex-col bg-gradient-to-bottom top-0 '>
             
           </div>

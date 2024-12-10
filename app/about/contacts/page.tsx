@@ -6,6 +6,7 @@ import { AnimationButton } from '@/components/footer/footer';
 import emailjs from "@emailjs/browser";
 import { AnimatePresence } from 'framer-motion';
 import Notification from '@/components/notifications';
+import Image from 'next/image';
 import { NotificationItems } from '@/type';
 
 interface FormData {
@@ -116,7 +117,9 @@ function Contact() {
                   </label>
                 </div>
               ))}
-              <AnimationButton value="send" />
+              <div className='w-[100%] lg:w-[50%]'>
+                <AnimationButton value="send"  />
+              </div>
             </form>
             <AnimatePresence>
               {showNotification && <Notification message="Email successfully sent!" />}
@@ -127,7 +130,7 @@ function Contact() {
               items.map((item) => (
                 <li key={item.id}>
                   <div className='flex justify-start mb-[80px]'>
-                    <img src={item.icon} alt="" className='w-11' />
+                    <Image src={item.icon} alt="" className='w-11' width={100} height={100} />
                     <div className='mx-[130px] max-1321:mx-[70px] w-[160px] flex flex-col justify-center'>
                       {item.infos &&
                         item.infos.map((info, i) => <p key={i} className='mb-1'>{info}</p>)}
