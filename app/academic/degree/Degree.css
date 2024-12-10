@@ -4,25 +4,9 @@ body {
   overflow-x: hidden;
 }
 
-
-
-.image {
-  
-  width: 100px;
-  height: 100px;
-  gap: 0px;
-  opacity: 1;
-  background: url("/images/deg.png");
-  background-repeat: no-repeat;
-  
-  background-size: cover;
-
-}
-
 .main {
   height: auto; 
 }
-
 
 .mainUnactive {
   
@@ -30,29 +14,6 @@ body {
   
   overflow: hidden;
   
-}
-
-
-
-
-.image-container,.image {
-  height: 50vw;
-  width: 85vw;
-}
-.image-container {
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 0%;
-}
-
-.image-section {
-  position: relative;
-  background-color: #ffffff;
-  position: relative;
-  background-color: #ffffff;
-  z-index: 35;
 }
 
 
@@ -72,19 +33,6 @@ body {
   flex-direction: column;
   position: relative;
   
-}
-
-
-
-
-
-
-
-
-.triviaMain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 
