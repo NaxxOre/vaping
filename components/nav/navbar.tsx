@@ -7,16 +7,18 @@ import  Link  from 'next/link';
 import LogoAnimation from "./logoAnimation";
 import Item3 from "./menuTab3";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInfoCircle, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { usePathname } from "next/navigation";
 // import Search from '../Components/Search/Search';
 
 function Navbar(){
     const navRef = useRef<HTMLDivElement | null>(null)
+    const pathname = usePathname()
     const [windowWidth, setWindowWidth] = useState<number>(0);
-    const [hoveredTab, setHoveredTab] = useState<String>("");
-    const [activeTab, setActiveTab] = useState<String>("");
+    const [hoveredTab, setHoveredTab] = useState<string>("");
+    const [activeTab, setActiveTab] = useState<string>("");
     const [activeNav, setActiveNav] = useState(false);
-    const [isSearch, setIsSearch ] = useState('');
+    // const [isSearch, setIsSearch ] = useState('');
 
     useEffect(() => {
         // Check if running on the client side
@@ -60,20 +62,23 @@ function Navbar(){
     };
 
     const showNavbar = () => {
-        navRef.current && navRef.current.classList.toggle("responsive_nav");
+        if (navRef.current) {
+            navRef.current.classList.toggle("responsive_nav");
+        }
         setActiveNav(!activeNav);
     };
+    
 
-    const searchAppear = () => {
-        setIsSearch('active');
-    };
+    // const searchAppear = () => {
+    //     setIsSearch('active');
+    // };
 
     
 
     return (
         <header className="relative flex justify-around items-center py-[16px] px-0 text-dark shadow-[0px_20px_60px_rgba(138,149,158,0.2)]">
             <Link href="/">
-            <LogoAnimation className='w-[100px] h-[89.29px]'/>
+            <LogoAnimation key={pathname} className='w-[100px] h-[89.29px]'/>
             
             </Link>
             <nav
@@ -170,7 +175,7 @@ function Navbar(){
                     </svg>
                 </button>
             </nav>
-            <div className="bg-[#3798a6] flex justify-center items-center rounded-full p-[12px] cursor-pointer" onClick={searchAppear}>
+            <div className="bg-[#3798a6] flex justify-center items-center rounded-full p-[12px] cursor-pointer" /*onClick={searchAppear}*/>
                 <FontAwesomeIcon icon={faMagnifyingGlass} className="text-[18px] text-[#fff]" />
             </div>
             <button className="nav-btn" onClick={showNavbar}>

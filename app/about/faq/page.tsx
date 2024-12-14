@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 function FAQ(){
 
     return(
-    <>
+    <div className="p-[5%]">
         <div className="py-14 lg:py-[72px] grid grid-cols-1 lg:grid-cols-[0.5fr_1fr] gap-10 lg:gap-[157px]">
             <HeadingStyle1 name="The answers to your questions" sizeLead="leading-12" size="text-5xl" mobileSize="text-4xl" mobileSizeLead="leading-[38px]" mobileSpace="pt-[30px]" space="pt-[38px]" tinyText="FAQS" />
 
@@ -29,7 +29,7 @@ function FAQ(){
             </div>
 
         </div>
-    </>
+    </div>
     )
 }
 

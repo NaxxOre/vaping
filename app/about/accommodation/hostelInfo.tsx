@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -56,7 +57,7 @@ export default function HostelInfo() {
                     {data.map((item, index) => (
                         <div key={index} className="flex flex-col items-center w-[288px] md:h-[377px] h-[300px] justify-around mb-5 mt-5">
                             <div className='h-[200px] flex justify-center items-center'>
-                                <img src={item.img} alt='' />
+                                <Image src={item.img} width={100} height={100} alt='' />
                             </div>
                             <div className='flex flex-col items-center'>
                                 <h4 className='text-[#3798a6] md:text-[32px] text-[25px]'>{item.title}</h4>
