@@ -58,7 +58,7 @@ const Question: React.FC<QuestionProps> = ({ id, question, answer }) => {
             className="overflow-hidden bg-gray-50 rounded-lg mt-2"
           >
             <div ref={contentRef} className="px-6 py-4">
-              <p className="text-sm lg:text-base text-gray-700">{answer}</p>
+              <p className="text-sm lg:text-lg text-gray-700">{answer}</p>
             </div>
           </motion.div>
         )}
