@@ -60,7 +60,7 @@ function Item2() {
                 key={i}
                 text={item.text}
                 link={item.link}
-                isActive={currentPath === item.link} // Highlight active link
+                // Highlight active link
               />
             ))}
           </ul>

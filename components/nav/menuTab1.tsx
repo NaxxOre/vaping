@@ -30,8 +30,8 @@ function Item1() {
           link: "/about/faculties",
         },
         {
-          text: "FAQS",
-          link: "/about/faqs",
+          text: "FAQ",
+          link: "/about/faq",
         },
       ],
     },
@@ -40,7 +40,7 @@ function Item1() {
       items: [
         {
           text: "Library",
-          link: "/academic/library",
+          link: "/about/library",
         },
         {
           text: "LMS",

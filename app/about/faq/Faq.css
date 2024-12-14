@@ -1,0 +1,257 @@
+
+
+body {
+  font-family: DegularRegular;
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+  scroll-behavior: smooth;
+  color: #1C1D20
+}
+.cover {
+ 
+  border: 4px dashed #d0ecef;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.start {
+  color: #077d8a;
+  display: inline-block;
+}
+
+.forFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+}
+
+.category {
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.main {
+  min-height: 500px;
+  /* padding: 5%; */
+  padding-bottom: 0;
+}
+
+
+.alignment {
+  width: 65%;
+  margin: auto;
+  margin-bottom: 2%;  
+}
+.whole {
+  width: 65%;
+  max-width: 874px;
+  margin: auto;
+  margin-bottom: 4%;
+  border-bottom: 1px solid rgb(208, 208, 208);
+  padding-bottom: 15px;
+  transition:  all .5s 0s ease-in-out;
+  position: relative;
+  
+}
+
+.whole:hover {
+
+  cursor: pointer;
+  border-bottom: 1px solid #1C1D20;
+
+}
+
+.dd {
+  display: inline-block;
+}
+
+.question {
+  
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.answer {
+  width: 100%;
+  transition: height 2s ease-in-out;
+}
+
+
+.circle {
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle:hover {
+  cursor: pointer;
+}
+
+h3 {
+  letter-spacing: 1.25;
+}
+
+.trivia {
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: black;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  
+}
+
+
+
+
+svg {
+  position: relative;
+  z-index: 12;
+}
+
+#svg {
+  color: black;
+}
+
+#svgg 
+{
+  color: white;
+}
+
+.high {
+  position: relative;
+  z-index: 30;
+}
+
+
+.para {
+  width: 100%;
+  margin: auto;
+  text-align: justify;
+  text-wrap: wrap;
+  font-family: DegularRegular;
+}
+
+
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	.whole {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 4%;
+    border-bottom: 1px solid rgb(208, 208, 208);
+    padding-bottom: 15px;
+    height: auto;
+  }
+
+
+  .alignment {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2%;  
+  }
+
+  #svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  #svgg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+
+/* Styles */
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+
+/* Styles */
+.alignment {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2%;  
+}
+.whole {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 4%;
+  border-bottom: 1px solid rgb(208, 208, 208);
+  padding-bottom: 15px;
+  position: relative;
+}
+
+}
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+/* Styles */
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+
+/* Styles */
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+
+/* Styles */
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+/* Styles */
+
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+
+/* Styles */
+
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+
+/* Styles */
+
+}
+
+.stick {
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color:#1C1D20;
+  left: 0;
+  top: 100%;
+}
+
+
+
