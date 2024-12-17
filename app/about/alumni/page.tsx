@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: "Alumni Network of University of Information Technology, Yangon, Myanmar"
   }
 
-function Alumni({searchParams}: {searchParams: {[key: string]: string | string[] | undefined}}){
+function Alumni(){
     return (
         <div className="alumni">
                 <ImageHeader url="/images/bg.jpg" name='Stay Connected with Our Alumni Network'/>

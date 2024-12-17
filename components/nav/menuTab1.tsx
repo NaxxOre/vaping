@@ -95,7 +95,10 @@ function Item1() {
           <ul>
             <ListItem text={data.title} isTitle={true} link="#"/>
             {data.items.map((item, i) => (
-              <ListItem key={i} text={item.text} link={item.link} />
+              <ListItem 
+              key={i} 
+              text={item.text} 
+              link={item.link} />
             ))}
           </ul>
         </div>

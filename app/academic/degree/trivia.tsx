@@ -50,7 +50,7 @@ function Trivia() {
 //   const language = useSelector((state: { language: { value: string } }) => state.language.value);
 
   return (
-    <div className="h-fit lg:pb-[72px] py-4 mx-auto triviaMain bg-[#f0f8ff] text-[#1C1D20] w-[90%]">
+    <div className="h-fit lg:pb-[72px] py-4 mx-auto flex justify-center items-center bg-[#f0f8ff] text-[#1C1D20] w-[90%]">
       <div className="w-[112%] grid lg:grid-cols-3 lg:gap-x-8">
         {(true ? textsEn : textsMyn).map((item, index) => (
           <div key={index}>

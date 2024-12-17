@@ -1,6 +1,6 @@
 "use client"
 
-import './Degree.css';
+// import './Degree.css';
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Link from 'next/link';

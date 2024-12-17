@@ -74,7 +74,7 @@ function History() {
             />
             <div className="w-full hidden max-1052:block mt-[60px] text-[#077d81] text-[40px] bg-[#f0f8ff] p-[4%] rounded-md">
               <p className="text-center">
-                "Towards a brighter future through innovation in ICT"
+              &quot;Towards a brighter future through innovation in ICT&quot;
               </p>
             </div>
           </div>
