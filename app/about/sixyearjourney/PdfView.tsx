@@ -12,7 +12,7 @@ interface PdfViewProps {
   file: string;
 }
 
-const pdfview: React.FC<PdfViewProps> = ({ file }) => {
+const PdfView: React.FC<PdfViewProps> = ({ file }) => {
   const zoomPluginInstance = zoomPlugin();
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
@@ -30,4 +30,4 @@ const pdfview: React.FC<PdfViewProps> = ({ file }) => {
   );
 };
 
-export default pdfview;
+export default PdfView;

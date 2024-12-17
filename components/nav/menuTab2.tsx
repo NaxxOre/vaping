@@ -16,6 +16,7 @@ function Item2() {
         { text: "Degree", link: "/academic/degree" },
         { text: "Diploma", link: "/academic/diploma" },
         { text: "Extra Curriculums", link: "/academic/extra-curriculums" },
+        {text:"Academic Rules",link:"/academic/academic-rules"},
       ],
     },
     {

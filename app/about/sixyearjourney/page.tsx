@@ -1,21 +1,19 @@
-
-import PdfView from './pdfview';
-
+import PdfView from './PdfView';
 import ImageHeader from "@/components/imageheader/header";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Academic-Rules UIT",
-    description: "Learn about UIT's Academic Rules",
+    title: "Six-year journey UIT",
+    description: "Touch with our six year successful journey at UIT",
 };
 
 const AcademicRule = () => {
   // Directly reference the file path from the public folder
-  const pdfFile = '/AcademicRules.pdf';
+  const pdfFile = '/UIT6YearsJourney.pdf';
 
   return (
-    <div className="academicrules">
-      <ImageHeader url="/images/bg.jpg" name="Academic Rules" />
+    <div className="sixyearjourney">
+      <ImageHeader url="/images/bg.jpg" name="Six Year Journey" />
       <div className="px-[5%]">
         <PdfView file={pdfFile} />
       </div>
